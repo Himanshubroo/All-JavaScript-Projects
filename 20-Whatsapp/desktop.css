@@ -1,0 +1,167 @@
+/*==================== Boilerplate ====================*/
+@font-face {
+    font-family: 'SCS';
+    src: url(./Fonts/Gilroy/Gilroy-Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SCS';
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #d7d7d7;
+}
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+    /*========== Colors ==========*/
+    --main-bg-color: #000;
+    --second-bg-color: #2A3942;
+    --third-bg-color: #202C33;
+    --text-color: #E9EDEF;
+    --border-color: #2e2e2e;
+    --button-color: #0A332C;
+    --button-secondary-color: #00A884;
+    --button-hover-color: #fff;
+    --button-hover-text-color: #000;
+
+    /*========== Font and Typography ==========*/
+    --body-font: 'SCS';
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 1.5rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+}
+
+/*==================== BASE ====================*/
+
+/*========== Main ==========*/
+
+@media (min-width: 800px) {
+    .main {
+        width: 100%;
+        height: 100%;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--third-bg-color);
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+        /* background-image: url(image/background.png); */
+        object-fit: cover;
+        object-position: center;
+        background-color: var(--third-bg-color);
+        background-position: center;
+        background-size: cover;
+        padding: 0 0 0 5rem;
+    }
+
+    .logo {
+        width: 120px;
+        padding: 20px 0;
+        cursor: pointer;
+    }
+
+    .content {
+        top: 50%;
+        position: absolute;
+        transform: translateY(-50%);
+        color: #fff;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    .content h1 {
+        font-size: 64px;
+        font-weight: 600;
+    }
+
+    .content h1 span {
+        color: #ff3753;
+    }
+
+    .content button {
+        background: transparent;
+        border: 2px solid #fff;
+        outline: none;
+        padding: 12px 25px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+
+    .content button img {
+        width: 15px;
+        margin-left: 10px;
+
+    }
+
+    .launch-time {
+        display: flex;
+        gap: 10px;
+        margin: 2rem 2rem 2rem 0;
+    }
+
+    .launch-time div {
+        flex-basis: 100px;
+    }
+
+    .launch-time div p {
+        font-size: 60px;
+        margin-bottom: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .launch-time div span {
+        display: flex;
+        justify-content: center;
+    }
+
+    .rocket {
+        width: 250px;
+        position: absolute;
+        right: 10%;
+        bottom: 0;
+        animation: rocket 4s linear infinite;
+    }
+
+    @keyframes rocket {
+        0% {
+            bottom: 0;
+            opacity: 0;
+        }
+
+        100% {
+            bottom: 105%;
+            opacity: 1;
+        }
+    }
+}

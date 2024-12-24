@@ -1,0 +1,283 @@
+/*==================== Boilerplate ====================*/
+@font-face {
+    font-family: 'SCS';
+    src: url(./Fonts/Gilroy/Gilroy-Regular.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'SCS';
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #d7d7d7;
+}
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+    /*========== Colors ==========*/
+    --main-bg-color: #000;
+    --second-bg-color: #2A3942;
+    --third-bg-color: #202C33;
+    --fourth-bg-color: #041210;
+    --text-color: #E9EDEF;
+    --border-color: #2e2e2e;
+    --button-color: #0A332C;
+    --button-secondary-color: #00A884;
+    --button-hover-color: #fff;
+    --button-hover-text-color: #000;
+
+    /*========== Font and Typography ==========*/
+    --body-font: 'SCS';
+    --biggest-font-size: 2.5rem;
+    --h1-font-size: 1.5rem;
+
+    /*========== Font weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+}
+
+/*==================== BASE ====================*/
+
+/*========== Main ==========*/
+
+@media (max-width: 480px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        width: 100%;
+        height: 100%;
+        background-color: var(--fourth-bg-color);
+    }
+
+    .home__section {
+        width: 100%;
+        height: 19%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        background-color: var(--fourth-bg-color);
+    }
+
+    .home-text {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+
+    }
+
+    .home-text h1 {
+        font-size: 1.8rem;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .home-text i {
+        font-size: 1.8rem;
+        color: #fff;
+        padding: 0 0.4rem;
+    }
+
+    .home-search {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .home-search input {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(51, 51, 51);
+        border: none;
+        outline: none;
+        padding: 0.5rem;
+        border-radius: 1rem;
+        padding: 0.8rem 1rem;
+
+    }
+
+    .home-search input::placeholder {
+        color: #555;
+        font-size: 1rem;
+        font-weight: 800;
+    }
+
+    /*==================== ABOUT ====================*/
+    .about__section {
+        width: 100%;
+        height: 100%;
+        margin-top: 35%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .full-screen{
+        width: 100%;
+        height: 100%;
+        /* background-color: blue; */
+        position: absolute;
+        display: none;
+        z-index: 2;
+    }
+
+    .about__section::-webkit-scrollbar {
+        display: none;
+    }
+
+    .about-box {
+        width: 100%;
+        border-bottom: 1px solid #2e2e2e;
+        padding: 0.8rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+    }
+
+    /* .overlay {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    .overlay:active {
+        background-color: var(--button-color);
+        opacity: 0.2;
+    } */
+
+    #progers {
+        width: 100%;
+        height: 5px;
+        background-color: #fff;
+        border-radius: 5px;
+    }
+
+    #growth {
+        width: 0%;
+        height: 100%;
+        background-color: #f24c4c;
+        border-radius: 5px;
+    }
+
+
+    .profile-img {
+        width: 4rem;
+        height: 3rem;
+        border-radius: 50%;
+        overflow: hidden;
+        pointer-events: none;
+    }
+
+    .profile-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .profile-text {
+        width: 100%;
+        pointer-events: none;
+    }
+
+    .heading {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .heading h1 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .heading h6 {
+        font-size: 0.6rem;
+        font-weight: 400;
+        color: #fff;
+    }
+
+    .message {
+        width: 100%;
+        height: 100%;
+        text-align: left;
+    }
+
+    .message p {
+        font-size: 0.7rem;
+        font-weight: 400;
+        color: #fff;
+        text-align: left;
+    }
+
+
+    /*========== Navbar ==========*/
+    .navbar__section {
+
+        width: 100%;
+        height: 10%;
+        background-color: var(--fourth-bg-color);
+        border-top: 2px solid #2e2e2e;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    .navbar-icons {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding:1rem;
+    }
+    .navbar-icons .active i:active {
+        width: 4rem;
+        height: 2.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.4;
+        background-color: var(--button-color);
+        border-radius: 1rem;
+    }
+
+    .navbar-icons div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-icons div h1 {
+        font-size: 1rem;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .navbar-icons div i {
+        font-size: 1.8rem;
+        color: #fff;
+    }
+}
+
+/*==================== Animations ====================*/
+
+/*==================== Responsive Design ====================*/

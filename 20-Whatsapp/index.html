@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="mobile.css">
+
+    <!--==================== Main CSS ====================-->
+    <link rel="stylesheet" href="main.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="desktop.css">
+
+    <!--==================== Icon - Remix icon ====================-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!--==================== Script ====================-->
+    <!-- <script defer src="desktop.js"></script> -->
+
+    <title>WhatsApp Clone</title>
+</head>
+
+<body>
+
+    <!--==================== Main ====================-->
+    <main class="main mx-auto">
+
+        <!--==================== Desktop ====================-->
+        <div class="desktop">
+            <div class="container">
+                <img src="/Image/WhatsApp_logo.webp" alt="logo" class="logo">
+                <div class="content">
+                    <p>Website Is Under Mintenance</p>
+                    <h1>We're <span>Launching</span> Soon</h1>
+                    <h3 class="text-white text-xl">It's Available for <span class="text-[#ff3753]">Mobile Devices</span>
+                    </h3>
+                    <div class="launch-time">
+
+                        <div>
+                            <p id="days">00</p>
+                            <span>Days</span>
+                        </div>
+                        <div>
+                            <p id="hours">00</p>
+                            <span>Hours</span>
+                        </div>
+                        <div>
+                            <p id="minutes">00</p>
+                            <span>Minutes</span>
+                        </div>
+                        <div>
+                            <p id="seconds">00</p>
+                            <span>Second</span>
+                        </div>
+
+
+                    </div>
+                    <button type="button">Learn More <img src="/Image/triangle.png" alt=""></button>
+                </div>
+                <img src="/Image/rocket.png" class="rocket">
+            </div>
+        </div>
+
+        <!--==================== Mobile ====================-->
+        <div class="mobile">
+
+            <!--==================== HOME ====================-->
+            <section class="home__section w-full h-full bg-red-5" id="home">
+                <div class="home-text">
+                    <h1>WhatsApp</h1>
+                    <div class="home-icons">
+                        <i class="ri-qr-code-line"></i>
+                        <i class="ri-camera-line"></i>
+                        <i class="ri-more-2-line"></i>
+                    </div>
+                </div>
+                <div class="home-search">
+                    <input type="text" placeholder="Ask Meta AI or Search">
+                </div>
+
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <div class="full-screen">
+                <div id="progers">
+                    <div id="growth"></div>
+                    <h1></h1>
+                </div>
+            </div>
+            <section class="about__section" id="about">
+                <div class="about-box">
+                    <div class="profile-img">
+                        <img src="https://images.unsplash.com/photo-1502323777036-f29e3972d82f?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt="">
+                    </div>
+                    <div class="profile-text">
+                        <div class="heading">
+                            <h1>John Doe</h1>
+                            <h6>5 min ago</h6>
+                        </div>
+                        <div class="message">
+                            <p>Lorem adipisicing elit. Quisquam bafwhi wfhji...</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!--==================== Navbar ====================-->
+            <section class="navbar__section" id="navbar">
+                <div class="navbar-icons">
+                    <div class="active">
+                        <i class="ri-message-fill"></i>
+                        <h1>Chats</h1>
+                    </div>
+                    <div class="active">
+                        <i class="ri-chat-smile-2-line"></i>
+                        <h1>Updates</h1>
+                    </div>
+                    <div class="active">
+                        <i class="ri-team-line"></i>
+                        <h1>Communities</h1>
+                    </div>
+                    <div class="active">
+                        <i class="ri-phone-fill"></i>
+                        <h1>Calls</h1>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!--==================== SCROLL TRIGGER JS ====================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <!--==================== GSAP JS ====================-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <!--==================== MAIN JS ====================-->
+    <script src="script.js"></script>
+</body>
+
+</html>
